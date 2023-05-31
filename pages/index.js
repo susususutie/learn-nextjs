@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -11,6 +12,13 @@ export default function Home() {
       </Head>
 
       <main>
+        <Image
+          src="/images/profile.jpg" // Route of the image file
+          height={144} // Desired size with correct aspect ratio
+          width={144} // Desired size with correct aspect ratio
+          alt="Your Name"
+        />
+
         <h1 className={styles.title}>
           Learn to <a href="https://nextjs.org">Next.js!</a>
         </h1>
